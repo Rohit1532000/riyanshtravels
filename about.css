@@ -1,0 +1,426 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+.nav-link {
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+
+.nav-item:hover {
+    background: rgb(233, 231, 231);
+    border-radius: 5px;
+
+}
+/* footer start from here */
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer {
+    background-color: #0c1a1e;
+    min-height: 350px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-col {
+    margin-top: 50px;
+}
+
+.logofooter {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer-col p {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.footer-col p i {
+    width: 20px;
+    color: #999;
+}
+
+.footer-ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 2px;
+}
+
+.footer-ul li {
+    line-height: 29px;
+    font-size: 12px;
+}
+
+.footer-ul li a {
+    color: #a0a3a4;
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+}
+
+.footer-ul i {
+    margin-right: 10px;
+}
+
+.footer-ul li a:hover {
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+    color: #ff670f;
+}
+
+.copyright {
+    min-height: 40px;
+    background-color: #000000;
+}
+
+.copyright p {
+    text-align: left;
+    color: #FFF;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.heading7 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #d9d6d6;
+    margin-bottom: 22px;
+}
+
+.post p {
+    font-size: 12px;
+    color: #FFF;
+    line-height: 20px;
+}
+
+.post p span {
+    display: block;
+    color: #8f8f8f;
+}
+
+.bottom_ul {
+    list-style-type: none;
+    float: right;
+    margin-bottom: 0;
+}
+
+.bottom_ul li {
+    float: left;
+    line-height: 40px;
+}
+
+.bottom_ul li:after {
+    content: "/";
+    color: #FFF;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.bottom_ul li a {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 7px;
+    border-radius: 50%;
+}
+
+.footer-social li {
+    float: left;
+    
+   
+}
+
+.fa-linkedin-in {
+    
+    color: rgb(13, 9, 241);
+    font-size: 27px;
+}
+
+.fa-facebook {
+    color: white;
+    font-size: 27px;
+    margin-left: 10px;
+}
+
+.fa-twitter {
+    font-size: 27px;
+    margin-left: 10px;
+    color: rgb(17, 162, 219);
+}
+
+.fa-google-plus-g {
+    font-size: 27px;
+    margin-left: 10px;
+    color: red;
+}
+#head{
+    margin-top:68px ;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(banner-1557834_960_720.jpg) fixed ;
+    
+    background-size: cover ;
+
+}
+
+.heading h1{
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: white;
+    
+}
+
+.heading a,span{
+    margin: 3px;
+    font-weight: bold;
+}
+.heading a{
+  color: white;
+  transition: 0.2s;
+  
+}
+.heading a:hover{
+    color: #ff3f0f;
+    text-decoration: none;
+}
+.heading span{
+    color: #ff3f0f;
+}
+/* form */
+#travelform {
+    background-color: black;
+    width: 260px;
+    height: 420px;
+    margin-top: 100px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgb(80, 79, 79);
+    padding: 10px;
+    position: absolute;
+    left: 35%;
+    z-index: 2;
+
+}
+
+@media only screen and (max-width:600px) and (min-width:200px) {
+    #travelform {
+        left: 24%;
+    }
+}
+
+@media only screen and (max-width:500px) and (min-width:200px) {
+    #travelform {
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width:350px) and (min-width:200px) {
+    #travelform {
+        left: 10%;
+    }
+}
+
+.namefield {
+    margin-top: 20px;
+}
+
+#travelform input {
+    margin-top: 12px;
+    width: 190px;
+    height: 22px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+    font-weight: bold;
+
+
+
+
+}
+
+#travelform button {
+    margin-top: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(109, 107, 107);
+
+    height: 30px;
+    border-radius: 5px;
+}
+
+.sub {
+    color: white;
+    background-color: green;
+    margin-right: 10px;
+
+}
+
+.sub:hover {
+    background-color: rgb(4, 180, 4);
+}
+
+.can {
+    color: white;
+    background-color: red;
+    text-shadow: 1px 1px 1px rgb(109, 107, 107);
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.can:hover {
+    background-color: rgb(245, 80, 80);
+    cursor: pointer;
+}
+
+.erorr {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#travelform .massage {
+    height: 40px;
+    width: 190px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+/* book form */
+#apply {
+    width: 90px;
+    height: 200px;
+    position: fixed;
+    z-index: 2;
+    
+
+
+
+}
+
+#formfills {
+    width: 45px;
+    height: 80px;
+    background-color: rgb(238, 178, 13);
+    padding-top: 15px;
+
+
+}
+
+#book {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+
+}
+
+#book:hover {
+    text-shadow: 1px 1px 1px wheat;
+}
+
+#whatsapp {
+    background-color: green;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 5px;
+    box-shadow: 3px 3px 3px rgb(226, 220, 220);
+}
+
+#whatsapp a {
+    line-height: 40px;
+    font-size: 22px;
+    color: white;
+    transition: 0.2s;
+}
+
+#whatsapp a:hover {
+    color: red;
+    font-size: 23px;
+}
+
+#phone {
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 5px;
+    box-shadow: 3px 3px 3px rgb(226, 220, 220);
+}
+
+#phone a {
+    line-height: 40px;
+    font-size: 17px;
+    color: white;
+    transition: 0.2s;
+}
+
+#phone a:hover {
+    text-shadow: 1px 1px 1px white;
+    font-size: 18px;
+}
+/* main */
+.main{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#aboutcontent {
+    font-size: 17px;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(94, 90, 90);
+
+}
+
+#booknow {
+    height: 110px;
+    background-color: rgb(221, 224, 226);
+    margin-bottom: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+
+#aboutimg {
+    width: 90%;
+    
+}
+
+
+

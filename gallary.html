@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm  navbar-light fixed-top" style="background-color:rgb(247, 247, 247)  ;">
+        <div class="container-fluid">
+            <span> <img src="LogoMakerCa-1660232556721.png" width="140px" style="margin-right:-5px ;"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="index.html"
+                            onmouseover="navlink(0)" onmouseleave="navlinkout(0)">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="about.html"
+                            onmouseover="navlink(1)" onmouseleave="navlinkout(1)">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black" href="contact.html"
+                            onmouseover="navlink(2)" onmouseleave="navlinkout(2)">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="gallary.html"
+                            onmouseover="navlink(3)" onmouseleave="navlinkout(3)">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="ourtaxi.html"
+                            onmouseover="navlink(4)" onmouseleave="navlinkout(4)">Our Taxis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="services.html"
+                            onmouseover="navlink(5)" onmouseleave="navlinkout(5)">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="serviceLocation.html"
+                            onmouseover="navlink(6)" onmouseleave="navlinkout(6)">Service Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="ourpackage.html"
+                            onmouseover="navlink(7)" onmouseleave="navlinkout(7)">Our Packages</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="head">
+        <div class="heading">
+            <h1>GALLERY</h1>
+            <center><a href="index.html">Home</a><span>|</span><span>Gallery</span></center>
+        </div>
+    </div>
+    <div id="apply">
+        <div id="formfills">
+            <center> <a id="book" onclick="booknow()" href="#travelform">Book Now</a></center>
+        </div>
+        <div class="contact">
+            <div id="whatsapp">
+                <center><a href=" https://wa.me/7836063161"><i class="fa-brands fa-whatsapp"></i></a></center>
+            </div>
+            <div id="phone">
+                <center> <a href="tel:7836063161"><i class="fa-solid fa-phone"></i></a></center>
+            </div>
+        </div>
+
+    </div>
+    <!-- form start -->
+    <div id="travelform">
+        <center>
+            <form id="formfield" aciton="#" name="myForm" onsubmit="return validateForm()" method="post">
+                <div id="name">
+                    <input class="namefield" name="fname" type="text" placeholder="Name"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+                <div id="email">
+                    <input type="email" name="femail" placeholder="Email"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+                <div id="phones">
+
+                    <input type="number" name="fphone" placeholder="Mobile no"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+                <div id="from">
+
+                    <input type="text" name="ffrom" placeholder="From"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+                <div id="to">
+                    <input type="text" name="fto" placeholder="to"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+
+                <textarea class="massage" type="text" placeholder="Massage(Optional)"></textarea><br>
+
+                <button class="sub">Submit</button><span class="can" onclick="cancel()">Close</span>
+            </form>
+        </center>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="gallery">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Daytona Beach <small>United States</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>
+                        Bad Pyrmont <small>Deutschland</small>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Yellowstone National Park <small>United States</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Quiraing, Portree <small>United Kingdom</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Highlands <small>United States</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Daytona Beach <small>United States</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>
+                        Bad Pyrmont <small>Deutschland</small>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Yellowstone National Park <small>United States</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Quiraing, Portree <small>United Kingdom</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600"
+                        alt="" />
+                    <figcaption>Highlands <small>United States</small></figcaption>
+                </figure>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+                <symbol id="close" viewBox="0 0 18 18">
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
+			S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
+			l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
+			c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
+			s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z" />
+                </symbol>
+            </svg>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7" style="color:red ;"> ABOUT RIYANSH TRAVELS</h6>
+
+                    <p style="font-size:10px ;">Our driver is very experienced and well versed in travel safety
+                        and
+                        precautions. We offer a
+                        collection and delivery service. Service areas such as airport, station, hospitals,
+                        villages and
+                        towns, etc.</p>
+                    <p style="font-size:10px ;"><i class="fa fa-map-pin"></i> Uttam Nagar East,
+                        Delhi-110059</p>
+                    <p style="font-size:10px ;"><i class="fa fa-phone"></i> Phone (India) : +91-7834866478,
+                        8706652427
+                    </p>
+                    <p style="font-size:10px ;"><i class="fa fa-envelope"></i> E-mail : riyanshtravels@gmail.com
+                    </p>
+
+
+                </div>
+
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7">SHARING OPTIONS</h6>
+                    <div class="post">
+                        <p>DELHI - DEHRADUN - DELHI</p>
+                        <p>DELHI - HALDWANI - DELHI</p>
+                        <p>DELHI - BAREILY - DELHI</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7" style="color:red ;">QUICK LINKS</h6>
+                    <ul class="footer-ul">
+                        <li><a href="index.html"> HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">OUR SERVICES</a></li>
+                        <li><a href="gallary.html"> OUR GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="ourtaxi.html">OUR TAXIS</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7">Social Media</h6>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google-plus-g" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="copyright">
+        <div class="container">
+
+            <center>
+                <p>© 2022 - All Rights with Rohitdeveloper</p>
+            </center>
+        </div>
+
+
+    </div>
+</body>
+<script>
+    function navlink(i) {
+        var a = document.getElementsByClassName('nav-link');
+        a[i].style.color = "red";
+    }
+    function navlinkout(i) {
+        var a = document.getElementsByClassName('nav-link');
+        a[i].style.color = "black";
+    }
+</script>
+<script>
+    function clearErrors() {
+
+        errors = document.getElementsByClassName('erorr');
+        for (let item of errors) {
+            item.innerHTML = "";
+        }
+
+
+    }
+    function seterror(id, error) {
+        //sets error inside tag of id 
+        element = document.getElementById(id);
+        element.getElementsByClassName('erorr')[0].innerHTML = error;
+
+    }
+
+    function validateForm() {
+        var returnval = true;
+        clearErrors();
+
+        //perform validation and if validation fails, set the value of returnval to false
+        var name = document.forms['myForm']["fname"].value;
+        if (name.length < 5) {
+            seterror("name", "*Length of name is too short");
+            returnval = false;
+        }
+
+        if (name.length == 0) {
+            seterror("name", "*Length of name cannot be zero!");
+            returnval = false;
+        }
+
+        var email = document.forms['myForm']["femail"].value;
+        if (email.length > 20) {
+            seterror("email", "*Email length is too long");
+            returnval = false;
+        }
+        if (email.length == 0) {
+            seterror("email", "*fill this box");
+            returnval = false;
+        }
+
+        var phone = document.forms['myForm']["fphone"].value;
+        if (phone.length != 10) {
+            seterror("phones", "*Phone number should be of 10 digits!");
+            returnval = false;
+        }
+
+        var tos = document.forms['myForm']["fto"].value;
+        if (tos.length == 0) {
+            seterror("to", "* please fill Destination point");
+            returnval = false;
+        }
+
+        var from = document.forms['myForm']["ffrom"].value;
+        if (from.length == 0) {
+            seterror("from", "* Please fill starting point");
+            returnval = false;
+        }
+
+
+
+        return returnval;
+    }
+
+    document.getElementById('travelform').style.display = "none";
+
+    function cancel() {
+        document.getElementById('formfield').reset()
+        document.getElementById('travelform').style.display = "none";
+        errors = document.getElementsByClassName('erorr');
+        for (let item of errors) {
+            item.innerHTML = "";
+        }
+
+    }
+
+    function booknow() {
+        document.getElementById('travelform').style.display = "block";
+    }
+</script>
+<script>
+    popup = {
+        init: function () {
+            $('figure').click(function () {
+                popup.open($(this));
+            });
+
+            $(document).on('click', '.popup img', function () {
+                return false;
+            }).on('click', '.popup', function () {
+                popup.close();
+            })
+        },
+        open: function ($figure) {
+            $('.gallery').addClass('pop');
+            $popup = $('<div class="popup" />').appendTo($('body'));
+            $fig = $figure.clone().appendTo($('.popup'));
+            $bg = $('<div class="bg" />').appendTo($('.popup'));
+            $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+            $shadow = $('<div class="shadow" />').appendTo($fig);
+            src = $('img', $fig).attr('src');
+            $shadow.css({ backgroundImage: 'url(' + src + ')' });
+            $bg.css({ backgroundImage: 'url(' + src + ')' });
+            setTimeout(function () {
+                $('.popup').addClass('pop');
+            }, 10);
+        },
+        close: function () {
+            $('.gallery, .popup').removeClass('pop');
+            setTimeout(function () {
+                $('.popup').remove()
+            }, 100);
+        }
+    }
+
+    popup.init()
+
+</script>
+
+</html>

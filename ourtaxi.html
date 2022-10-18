@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ourtaxi.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm  navbar-light fixed-top" style="background-color:rgb(247, 247, 247)  ;">
+        <div class="container-fluid">
+            <span> <img src="LogoMakerCa-1660232556721.png" width="140px" style="margin-right:-5px ;"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="index.html"
+                            onmouseover="navlink(0)" onmouseleave="navlinkout(0)">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="about.html"
+                            onmouseover="navlink(1)" onmouseleave="navlinkout(1)">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black" href="contact.html"
+                            onmouseover="navlink(2)" onmouseleave="navlinkout(2)">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="gallary.html"
+                            onmouseover="navlink(3)" onmouseleave="navlinkout(3)">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="ourtaxi.html"
+                            onmouseover="navlink(4)" onmouseleave="navlinkout(4)">Our Taxis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="services.html"
+                            onmouseover="navlink(5)" onmouseleave="navlinkout(5)">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="serviceLocation.html"
+                            onmouseover="navlink(6)" onmouseleave="navlinkout(6)">Service Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size:12px ; color: black;" href="ourpackage.html"
+                            onmouseover="navlink(7)" onmouseleave="navlinkout(7)">Our Packages</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="head">
+        <div class="heading">
+        <h1>Our Taxi</h1>
+       <center><a href="index.html">Home</a><span>|</span><span>Our Taxi</span></center> 
+        </div>
+    </div>
+    <div id="apply">
+        <div id="formfills">
+            <center> <a id="book" onclick="booknow()" href="#travelform">Book Now</a></center>
+        </div>
+        <div class="contact">
+            <div id="whatsapp">
+                <center><a href=" https://wa.me/7836063161"><i class="fa-brands fa-whatsapp"></i></a></center>
+            </div>
+            <div id="phone">
+                <center> <a href="tel:7836063161"><i class="fa-solid fa-phone"></i></a></center>
+            </div>
+        </div>
+
+    </div>
+    <!-- form start -->
+    <div id="travelform">
+        <center>
+            <form id="formfield" aciton="#" name="myForm" onsubmit="return validateForm()" method="post">
+                <div id="name">
+                    <input class="namefield" name="fname" type="text" placeholder="Name"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+                <div id="email">
+                    <input type="email" name="femail" placeholder="Email"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+                <div id="phones">
+
+                    <input type="number" name="fphone" placeholder="Mobile no"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+                <div id="from">
+
+                    <input type="text" name="ffrom" placeholder="From"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+                <div id="to">
+                    <input type="text" name="fto" placeholder="to"><br>
+
+                    <span class="erorr"></span><br>
+                </div>
+
+                <textarea class="massage" type="text" placeholder="Massage(Optional)"></textarea><br>
+
+                <button class="sub">Submit</button><span class="can" onclick="cancel()">Close</span>
+            </form>
+        </center>
+    </div>
+    <div class="container" style="margin-top:15px ; margin-bottom: 20px;">
+        <Center>
+            <h2><b>Our Taxis</b></h2>
+        </Center>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card imgcards">
+                    <img src="amaze.jpg">
+                    <p class="taxiname"><b>Honda Amaze</b></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card imgcards">
+                    <img src="ertiga.jpg">
+                    <p class="taxiname"><b>Maruti Suzuki Ertiga</b></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card imgcards">
+                    <img src="innova.jpg">
+                    <p class="taxiname"><b>Toyota Innova</b></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card imgcards">
+                    <img src="swift.jpg">
+                    <p class="taxiname"><b>Maruti Suzuki Swift</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7" style="color:red ;"> ABOUT RIYANSH TRAVELS</h6>
+
+                    <p style="font-size:10px ;">Our driver is very experienced and well versed in travel safety and
+                        precautions. We offer a
+                        collection and delivery service. Service areas such as airport, station, hospitals, villages and
+                        towns, etc.</p>
+                    <p style="font-size:10px ;"><i class="fa fa-map-pin"></i> Uttam Nagar East,
+                        Delhi-110059</p>
+                    <p style="font-size:10px ;"><i class="fa fa-phone"></i> Phone (India) : +91-7834866478, 8706652427
+                    </p>
+                    <p style="font-size:10px ;"><i class="fa fa-envelope"></i> E-mail : riyanshtravels@gmail.com</p>
+
+
+                </div>
+
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7">SHARING OPTIONS</h6>
+                    <div class="post">
+                        <p>DELHI - DEHRADUN - DELHI</p>
+                        <p>DELHI - HALDWANI - DELHI</p>
+                        <p>DELHI - BAREILY - DELHI</p>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7" style="color:red ;">QUICK LINKS</h6>
+                    <ul class="footer-ul">
+                        <li><a href="index.html"> HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">OUR SERVICES</a></li>
+                        <li><a href="gallary.html"> OUR GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="ourtaxi.html">OUR TAXIS</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7">Social Media</h6>
+                    <ul class="footer-social">
+                        <li ><a href="#"><i class="fa-brands fa-linkedin-in"  aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a
+                                href="#"><i class="fa-brands fa-google-plus-g" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <div class="copyright">
+        <div class="container">
+
+            <center>
+                <p>© 2022 - All Rights with Rohitdeveloper</p>
+            </center>
+        </div>
+
+
+    </div>
+</body>
+<script>
+    function navlink(i) {
+        var a = document.getElementsByClassName('nav-link');
+        a[i].style.color = "red";
+    }
+    function navlinkout(i) {
+        var a = document.getElementsByClassName('nav-link');
+        a[i].style.color = "black";
+    }
+</script>
+<script>
+    function clearErrors() {
+
+        errors = document.getElementsByClassName('erorr');
+        for (let item of errors) {
+            item.innerHTML = "";
+        }
+
+
+    }
+    function seterror(id, error) {
+        //sets error inside tag of id 
+        element = document.getElementById(id);
+        element.getElementsByClassName('erorr')[0].innerHTML = error;
+
+    }
+
+    function validateForm() {
+        var returnval = true;
+        clearErrors();
+
+        //perform validation and if validation fails, set the value of returnval to false
+        var name = document.forms['myForm']["fname"].value;
+        if (name.length < 5) {
+            seterror("name", "*Length of name is too short");
+            returnval = false;
+        }
+
+        if (name.length == 0) {
+            seterror("name", "*Length of name cannot be zero!");
+            returnval = false;
+        }
+
+        var email = document.forms['myForm']["femail"].value;
+        if (email.length > 20) {
+            seterror("email", "*Email length is too long");
+            returnval = false;
+        }
+        if (email.length == 0) {
+            seterror("email", "*fill this box");
+            returnval = false;
+        }
+
+        var phone = document.forms['myForm']["fphone"].value;
+        if (phone.length != 10) {
+            seterror("phones", "*Phone number should be of 10 digits!");
+            returnval = false;
+        }
+
+        var tos = document.forms['myForm']["fto"].value;
+        if (tos.length == 0) {
+            seterror("to", "* please fill Destination point");
+            returnval = false;
+        }
+
+        var from = document.forms['myForm']["ffrom"].value;
+        if (from.length == 0) {
+            seterror("from", "* Please fill starting point");
+            returnval = false;
+        }
+
+
+
+        return returnval;
+    }
+
+    document.getElementById('travelform').style.display = "none";
+
+    function cancel() {
+        document.getElementById('formfield').reset()
+        document.getElementById('travelform').style.display = "none";
+        errors = document.getElementsByClassName('erorr');
+        for (let item of errors) {
+            item.innerHTML = "";
+        }
+
+    }
+
+    function booknow() {
+        document.getElementById('travelform').style.display = "block";
+    }
+</script>
+
+</html>
